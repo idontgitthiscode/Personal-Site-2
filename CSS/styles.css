@@ -1,0 +1,172 @@
+/********* Color Palette ******************************************
+https://colorhunt.co/palette/264401
+#ffc93c
+#dbf6e9
+#9ddfd3
+#31326f
+*******************************************************************/
+
+/********** Genaral Style *****************************************/
+body {
+  margin: 0;
+  background-color: #ffc93c;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+}
+
+hr{
+    border-style: dotted none none none;
+    border-width: 15px;
+    width: 30%;
+    color: #1c3a59;
+
+    margin: 5% 0 5% 0;
+}
+
+
+h2 {
+  color: #31326f;
+}
+
+.maketextinline {
+  display: inline;
+}
+
+.page-wraper {
+  display: grid;
+  grid-template-columns: 1% 1fr 1%;
+  grid-template-rows: 1fr 1fr mincontent;
+  grid-template-areas:
+  ". header ."
+  ". main ."
+  "footer footer footer";
+}
+
+
+/********** Navigation *********************************************/
+
+.nav-bar {
+  background-color: #31326f;
+  height: 8vh;
+  position: relative;
+  top:0;
+}
+
+/********** Header **************************************************/
+
+/**Grid-Reciver **/
+.hero {
+ margin-top: 30px;
+ grid-area: header;
+  /**TEXT**/
+ font-family: 'Anton', sans-serif;
+ text-align: center;
+ font-size: 40px;
+ background-color: ;
+
+}
+
+ /**Ajust-Order-Hero**/
+.flexbox {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/**Web-Spin and Position**/
+#webbox{
+  display: flex;
+}
+
+#web {
+  width: 85px;
+  height: 80px;
+  padding:0 5px 0 5px;
+  transition: transform .7s ease-in-out;
+}
+
+#web:hover {
+transform: rotate(360deg);
+}
+
+/**Hero-Image**/
+.img {
+  min-width: 150px;
+  width: 20%;
+  max-width: 350px;
+  margin: 50px auto 25px auto;
+  text-align: center;
+}
+
+/**Hero-Image-Responsive*
+@media (min-width: 800px) {
+  .img {
+  width: 50%;
+  }
+  }
+
+  @media (min-width: 500px) {
+    .img {
+    width: 85%;
+    }
+    }
+*/
+
+/**Hero-Textbox**/
+
+/********** Main ***************************************************/
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textbox {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #9ddfd3;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: 5px solid #dbf6e9;
+  width: 85%;
+  max-width: 800px;
+
+}
+
+.devstyle {
+  border: 5px solid #31326f;
+  background-color: #dbf6e9;
+  max-width: 85%;
+  margin: 25px 0 50px 0;
+  border-radius: 2px;
+  padding: 15px;
+}
+
+.icon{
+  display: block;
+  min-width: 50px;
+  width:25%;
+  max-width: 200px;
+  margin: 5px auto 5px auto;
+  text-align: center;
+}
+
+.profile{
+  width: mincontent;
+}
+
+/********** Footer *************************************************/
+
+.footer {
+  background-color: #31326f;
+  grid-area: footer;
+  position: ;
+}
