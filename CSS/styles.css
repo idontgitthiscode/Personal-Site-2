@@ -44,11 +44,46 @@ h2 {
 /********** Navigation *********************************************/
 
 .nav-bar {
-  background-color: #31326f;
+  background-color:#31326f ;
   height: 8vh;
   position: sticky;
-  top:0;
+  top: 0;
+  box-shadow: -1px 0px 15px 10px rgb(0 0 0 / 25%);
 }
+
+ul {
+  width: 100%;
+  height: 8vh;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  color: white;
+  border: 0;
+  border-radius: 5px 5px 5px 5px;
+  text-decoration: none;
+  align-self: center;
+}
+
+.nav-link:hover {
+  color: #31326f;
+  cursor: pointer;
+  background-color: #9ddfd3;
+}
+
+.nav-link:visited {
+  text-decoration: none;
+}
+
+
 
 /********** Header **************************************************/
 
@@ -162,10 +197,12 @@ transform: rotate(360deg);
 .devstyle {
   border: 5px solid #31326f;
   background-color: #dbf6e9;
-  max-width: 90%;
+  width: 90%;
   margin: 25px 0 30px 0;
   border-radius: 2px;
   padding: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .icon{
@@ -192,9 +229,13 @@ transform: rotate(360deg);
 /********** Footer *************************************************/
 
 .footer {
+  padding: 20px 0 20px 0;
+  font-size: 1.2em;
+  color: white;
   height: 8vh;
   background-color: #31326f;
   grid-area: footer;
   position: sticky;
   bottom: 0;
+  box-shadow: 1px -2px 15px 10px rgb(0 0 0 / 25%);
 }
