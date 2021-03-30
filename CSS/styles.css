@@ -22,7 +22,6 @@ hr {
     margin: 5% 0 5% 0;
 }
 
-
 h2 {
   color: #31326f;
 }
@@ -34,7 +33,7 @@ h2 {
 .page-wraper {
   display: grid;
   grid-template-columns: 1% 1fr 1%;
-  grid-template-rows: 1fr 1fr mincontent;
+  grid-template-rows: mincontent 1fr mincontent;
   grid-template-areas:
   ". header ."
   ". main ."
@@ -55,14 +54,9 @@ h2 {
 
 /**Grid-Reciver **/
 .hero {
- margin-top: 30px;
  grid-area: header;
-  /**TEXT**/
  font-family: 'Anton', sans-serif;
  text-align: center;
- font-size: 40px;
- background-color: ;
-
 }
 
  /**Ajust-Order-Hero**/
@@ -71,6 +65,56 @@ h2 {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+}
+
+.grid-container {
+  max-width: 850px;
+  height: 80vh;
+  margin: auto;
+  top: 80px;
+  display:grid;
+  justify-items: stretch;
+  align-content:center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 47% 6% 47%;
+  grid-template-areas:
+  "top"
+  "."
+  "bottom";
+}
+
+.taketop{
+  grid-area: top;
+  align-self: self-end;
+}
+
+ @media (max-width:500px) {
+   .taketop {
+     font-size: 1,5rem;
+   }
+ }
+ @media (min-width:501px) {
+   .taketop {
+     font-size: 2rem;
+   }
+ }
+
+.taketop h1{
+  margin: 3% 0 0 0;
+}
+
+.takebottom {
+grid-area: bottom;
+align-self: self-start;
+}
+
+/**Hero-Image**/
+.img-hero {
+  max-width: 30%;
+}
+
+.img-container{
+  display: inline-block;
 }
 
 /**Web-Spin and Position**/
@@ -89,31 +133,6 @@ h2 {
 transform: rotate(360deg);
 }
 
-/**Hero-Image**/
-.img {
-  min-width: 150px;
-  width: 20%;
-  max-width: 350px;
-  margin: 100px auto 25px auto;
-  text-align: center;
-}
-
-/**Hero-Image-Responsive*
-@media (min-width: 800px) {
-  .img {
-  width: 50%;
-  }
-  }
-
-  @media (min-width: 500px) {
-    .img {
-    width: 85%;
-    }
-    }
-*/
-
-/**Hero-Textbox**/
-
 /********** Main ***************************************************/
 
 .main {
@@ -125,26 +144,26 @@ transform: rotate(360deg);
 }
 
 .textbox {
+  width: 94%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   background-color: #9ddfd3;
   padding: 15px;
-  margin: 10px;
+  margin: 8% 10px 8% 10px;
   border-radius: 10px;
   text-align: center;
   border: 5px solid #dbf6e9;
-  width: 85%;
-  max-width: 800px;
+  max-width: 1000px;
 
 }
 
 .devstyle {
   border: 5px solid #31326f;
   background-color: #dbf6e9;
-  max-width: 85%;
-  margin: 25px 0 50px 0;
+  max-width: 90%;
+  margin: 25px 0 30px 0;
   border-radius: 2px;
   padding: 15px;
 }
@@ -158,14 +177,24 @@ transform: rotate(360deg);
   text-align: center;
 }
 
-.profile{
-  width: mincontent;
+
+
+.skills{
+  margin: 8% 10px 8% 10px;
+  max-width: 850px;
+}
+.img {
+  max-width: 30%;
+  display:inline;
+
 }
 
 /********** Footer *************************************************/
 
 .footer {
+  height: 8vh;
   background-color: #31326f;
   grid-area: footer;
-  position: ;
+  position: sticky;
+  bottom: 0;
 }
