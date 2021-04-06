@@ -5,4 +5,5 @@ Pictures are just Placeholders and not for Public use.
 Colors
 https://colorhunt.co/palette/264401
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/62408854/113693885-61e92c80-96cf-11eb-9c7b-007d40e1f9d6.png)
+
